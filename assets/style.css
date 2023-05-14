@@ -15,10 +15,10 @@ body {
   overflow-x: hidden;
   -webkit-scroll-snap-type: y mandatory;
   -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   width: 50%;
   height: 400px;
-  font-size: 10px;
+  font-size: 10px
 }
 
 .scroll-container, .scroll-area {
