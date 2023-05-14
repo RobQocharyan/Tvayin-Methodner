@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="scroll-container">
+      <div class="scroll-area">
+        <img src="./nyuton.jpg" alt="" />
+      </div>
+      <div class="scroll-area">
+        <img src="./2.jpg" alt="" />
+      </div>
+      <div class="scroll-area">
+        <img src="./2.jpg" alt="" />
+      </div>
+      <div class="scroll-area">
+        <img src="./2.jpg" alt="" />
+      </div>
+    </div>
+    <div class="solution">
+      <input type="number" id="function-input-x" />
+      <input type="number" id="function-input-e" />
+      <select name="foo" id="mySelect"></select>
+      <button type="button" onclick="myFunction()">Try it</button>
+    </div>
+
+    <span id="demo" class="demo"></span>
+
+    <div id="calculator" style="width: 100%; height: 400px"></div>
+    <script src="./script.js"></script>
+
+    <script>
+      const elt = document.getElementById("calculator");
+      const calculator = Desmos.GraphingCalculator(elt);
+    </script>
+    <script>
+      calculate(90, 8);
+    </script>
+  </body>
+</html>
